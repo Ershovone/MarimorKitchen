@@ -18,9 +18,7 @@ export default function Home() {
       <Wallpaper />
       <MenuTabs />
       <main className={styles.content}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        
       </main>
 
       <footer className={styles.footer}>
