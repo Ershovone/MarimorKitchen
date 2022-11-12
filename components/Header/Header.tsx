@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import styles from '../../styles/Header.module.css';
+import { ContentWrapper } from '../ContentWrapper';
 
 const Header: React.FC = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
+      <ContentWrapper>
         <div className={styles.leftNavigation}>
           <span className={styles.section}>menu</span>
           <span className={styles.section}>raw</span>
@@ -18,7 +19,7 @@ const Header: React.FC = () => {
           <span className={styles.lang}>ru</span>
           <span className={styles.workshop}>workshop</span>
         </div>
-      </div>
+      </ContentWrapper>
     </div>
   )
 }
