@@ -1,0 +1,44 @@
+{
+  "content": [
+    {
+      "id": 11,
+      "number": 11,
+      "senderId": 6,
+      "receiverId": 3,
+      "fromCode": "EUR",
+      "toCode": "USD",
+      "fromAmount": 100,
+      "toAmount": 110,
+      "rate": 1.1,
+      "status": "PROV",
+      "date": "2017-03-19T11:14:51.000Z",
+      "operation": "CONV"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "senderId": 6,
+      "receiverId": 3,
+      "fromCode": "RUB",
+      "toCode": "USD",
+      "fromAmount": 100,
+      "status": "IN_PROGRESS",
+      "date": "2017-03-18T11:14:51.000Z",
+      "operation": "BUY"
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "senderId": 6,
+      "receiverId": 3,
+      "fromCode": "RUB",
+      "toCode": "USD",
+      "fromAmount": 6837,
+      "toAmount": 100,
+      "rate": 68.37,
+      "status": "REJECTED",
+      "date": "2017-03-19T11:14:51.000Z",
+      "operation": "BUY"
+    }
+  ]
+}

@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { ContentWrapper } from '../components/ContentWrapper'
 import { Header } from '../components/Header'
 import { MenuTabs } from '../components/MenuTabs'
 import { Wallpaper } from '../components/Wallpaper'
+import { ProductCard } from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
+import products from '../stubbs/products.json'
 
 export default function Home() {
   return (
@@ -18,20 +21,26 @@ export default function Home() {
       <Wallpaper />
       <MenuTabs />
       <main className={styles.content}>
-        
+        <ContentWrapper>
+          <div className={styles.productsWrap}>
+            {products.content.map(product => (
+              <ProductCard key={product.id} />
+            ))}
+          </div>
+        </ContentWrapper>
       </main>
-
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+        <ContentWrapper>
+          <div className={styles.footerContent}>
+            <div className={styles.socials}>
+              <div className={styles.instagram} />
+              <div className={styles.whatsapp} />
+            </div>
+            <div className={styles.rights}>
+              MariMor © 2022 All Rights Reserved.
+            </div>
+          </div>
+        </ContentWrapper>
       </footer>
     </div>
   )
